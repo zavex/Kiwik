@@ -1,9 +1,9 @@
 'use client';
-import { FC, ReactNode, useEffect, useState } from 'react';
-import { useAppSelector } from '@/redux/hooks';
-import { useRouter, useSelectedLayoutSegment } from 'next/navigation';
 import { LoadingPage } from '@/components/common/loading';
+import { useAppSelector } from '@/redux/hooks';
 import Link from 'next/link';
+import { useRouter, useSelectedLayoutSegment } from 'next/navigation';
+import { FC, ReactNode, useEffect, useState } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
 
@@ -34,7 +34,7 @@ const SellerLayout: FC<IProps> = ({ children }) => {
           <div className="mt-2 flex items-center w-full h-[48px] space-x-2 text-[12px] uppercase text-primary">
             <Link href="/">
               <div className="flex items-center">
-                <AiFillHome /> <span>Home</span>
+                <AiFillHome /> <span>Inicio</span>
               </div>
             </Link>
             <Link href={'/cart'}>
@@ -45,7 +45,7 @@ const SellerLayout: FC<IProps> = ({ children }) => {
             {segment === 'checkout' && (
               <Link href={'/cart/checkout'}>
                 <div className="flex items-center">
-                  <IoIosArrowForward /> <span>Checkout</span>
+                  <IoIosArrowForward /> <span>Ordenar y Pagar</span>
                 </div>
               </Link>
             )}

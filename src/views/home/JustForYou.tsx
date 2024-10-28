@@ -1,8 +1,8 @@
+import { ProductListType } from '@/types/product.types';
 import Link from 'next/link';
 import { FC } from 'react';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import ProductCart from './ProductCart';
-import { ProductListType } from '@/types/product.types';
 
 //---------------------------------------------
 interface IProps {

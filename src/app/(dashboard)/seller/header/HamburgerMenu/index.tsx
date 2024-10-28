@@ -1,13 +1,13 @@
+import { logout } from '@/redux/features/authSlice';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { BiLogOutCircle } from 'react-icons/bi';
+import { useDispatch } from 'react-redux';
 import GroupList from './GroupList';
 import actionsList, { SellerSidebarActionList } from './navLinks';
 import { isMatchEndPoint } from './utils';
-import { useDispatch } from 'react-redux';
-import { logout } from '@/redux/features/authSlice';
 
 //---------------------------------------------------
 
@@ -57,7 +57,7 @@ function SellerSidebar() {
             >
               <h1 className="cursor-pointer font-bold text-white">
                 <Link href="/" passHref>
-                  DeepBazar
+                  Kiwik
                 </Link>
               </h1>
             </div>

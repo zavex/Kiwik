@@ -21,7 +21,7 @@ const CategorySection = () => {
   return (
     <section className="w-full relative mt-[40px] md:mt-[60px]">
       <h1 className="text-sm md:text-[28px] font-bold">
-        Shop Our Top Categories
+        Explora nuestras categorias mas vendidas!
       </h1>
 
       {isLoading && loadingSkeleton}

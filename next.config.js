@@ -12,6 +12,7 @@ const nextConfig = {
       'plus.unsplash.com',
       'res.cloudinary.com',
       'img.freepik.com',
+      'kuub-archivos.s3.us-east-2.amazonaws.com'
     ],
   },
   eslint: {

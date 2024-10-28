@@ -24,28 +24,28 @@ const MenuList = () => {
         <ul className="lg:mt-10 mt-4 text-sm md:text-base w-auto">
           <Link href="/">
             <li className="mb-2 cursor-pointer hover:underline duration-200">
-              Home
+              Inicio
             </li>
           </Link>
           <Link href="/shop">
             <li className="mb-2 cursor-pointer hover:underline duration-200">
-              shop
+              Marketplace
             </li>
           </Link>
           <Link href="/best-offers">
             <li className="mb-2 cursor-pointer hover:underline duration-200">
-              Best Offers
+              Promociones
             </li>
           </Link>
           <li
             onClick={trackOrderHandler}
             className="mb-2 cursor-pointer hover:underline duration-200"
           >
-            Track Order
+            Rastrear orden
           </li>
           <Link href="/cart">
             <li className="mb-2 cursor-pointer hover:underline duration-200">
-              Cart
+              Carrito
             </li>
           </Link>
           {!user?._id && (
@@ -59,12 +59,12 @@ const MenuList = () => {
                 }}
               >
                 <li className="mb-2 cursor-pointer hover:underline duration-200">
-                  Sell On DeepBazar
+                  Vende en Kiwik
                 </li>
               </Link>
               <Link href="/auth">
                 <li className="mb-2 cursor-pointer hover:underline duration-200">
-                  Sign Up/Sign In
+                  Registro/Iniciar Sesion
                 </li>
               </Link>
             </>

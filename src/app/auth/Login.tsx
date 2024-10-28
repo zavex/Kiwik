@@ -1,4 +1,8 @@
 import Button from '@/components/common/Button';
+import {
+  CustomFormikInput,
+  InputApiErrorMessage,
+} from '@/components/common/FormikCustomInput';
 import { setCredentials } from '@/redux/features/authSlice';
 import { useAppDispatch } from '@/redux/hooks';
 import { useLoginMutation } from '@/redux/services/auth';
@@ -7,10 +11,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { FC, useEffect } from 'react';
 import * as Yup from 'yup';
-import {
-  CustomFormikInput,
-  InputApiErrorMessage,
-} from '@/components/common/FormikCustomInput';
 //-----------------------------------------------------------
 interface IProps {
   activeNewUserHandler: () => void;
@@ -88,7 +88,7 @@ const Login: FC<IProps> = ({ activeNewUserHandler }) => {
             href="/auth/forgot-password"
             className="text-[12px] text-gray-400 hover:underline"
           >
-            Forgot Password?
+            Recuperar Contraseña
           </Link>
         </Button>
 
@@ -100,7 +100,7 @@ const Login: FC<IProps> = ({ activeNewUserHandler }) => {
           type="submit"
           className="shadow-[0_10px_30px_rgba(8,_112,_184,_0.7)] active:scale-95 duration-150 flex justify-center items-center w-full mt-[10px] bg-primary h-[42px] rounded-[6px] text-white text-[13px]"
         >
-          Sign In
+          Iniciar Sesion
         </Button>
 
         <Button
@@ -108,7 +108,7 @@ const Login: FC<IProps> = ({ activeNewUserHandler }) => {
           type="button"
           className="mt-4 text-[12px] text-gray-400 flex items-center space-x-1 cursor-text"
         >
-          <p>New to DeepBazar?</p>
+          <p>Crear Cuenta</p>
           <p className="text-primary cursor-pointer hover:underline">Sign Up</p>
         </Button>
       </Form>

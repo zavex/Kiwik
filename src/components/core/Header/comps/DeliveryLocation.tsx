@@ -76,7 +76,7 @@ const DeliveryLocation = () => {
 
     const filterDefaultLocation = (countries: GetLocationData[]) => {
       const filterDefaultLocation = countries.find(
-        location => location.country === 'Bangladesh'
+        location => location.country === 'Mexico'
       ) as GetLocationData;
 
       setDefaultLocation(filterDefaultLocation);
@@ -123,7 +123,7 @@ const DeliveryLocation = () => {
               </div>
             </div>
             <p className="text-[10px] text-gray-500 px-3">
-              Chose your location
+              Elige tu ubicacion
             </p>
           </div>
           {isOpenList && (

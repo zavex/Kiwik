@@ -1,15 +1,16 @@
 'use client';
 
 import Skeleton from '@/components/common/Skeleton';
+import products from '@/fakeDB/products';
+import { useGetProductsMutation } from '@/redux/services/productApi';
 import { ProductSectionName } from '@/types/product.types';
 import CategorySection from '@/views/home/CategorySection';
 import FeaturedProducts from '@/views/home/FeaturedProducts';
 import HeroSection from '@/views/home/HeroSection';
 import JustForYou from '@/views/home/JustForYou';
 import NewArrivals from '@/views/home/NewArrivals';
-import { useGetProductsMutation } from '@/redux/services/productApi';
-import { useEffect, useState } from 'react';
 import SponsoredItem from '@/views/home/SponsoredItem';
+import { useEffect, useState } from 'react';
 
 //-----------------------------------------
 
@@ -78,7 +79,7 @@ export default function Home() {
             data={
               typeof getNewArrivalsApi.data !== 'undefined'
                 ? getNewArrivalsApi.data.data.products
-                : []
+                : products
             }
           />
         )}
@@ -95,7 +96,7 @@ export default function Home() {
             data={
               typeof getJustForYouApi.data !== 'undefined'
                 ? getJustForYouApi.data.data.products
-                : []
+                : products
             }
           />
         )}
@@ -113,7 +114,7 @@ export default function Home() {
             data={
               typeof getFeaturedProductsApi.data !== 'undefined'
                 ? getFeaturedProductsApi.data.data.products
-                : []
+                : products
             }
           />
         )}

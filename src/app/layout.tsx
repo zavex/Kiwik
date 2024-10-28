@@ -1,13 +1,13 @@
-import Header from '@/components/core/Header';
-import { Providers } from '@/redux/provider';
 import BottomNavigation from '@/components/core/BottomNavigation';
 import Footer from '@/components/core/Footer';
+import Header from '@/components/core/Header';
+import { Providers } from '@/redux/provider';
 import type { Metadata } from 'next';
 
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Largest E-Commerce Platform In Bangladesh - DeepBazar',
+  title: 'La plataforma de ventas mas grande de Mexico - Kiwik',
 };
 
 interface RootLayoutProps {

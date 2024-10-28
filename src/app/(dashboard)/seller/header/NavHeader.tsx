@@ -1,13 +1,13 @@
 import Button from '@/components/common/Button';
+import { useAppSelector } from '@/redux/hooks';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Dispatch, SetStateAction, useState } from 'react';
+import ClickAwayListener from 'react-click-away-listener';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiMenu } from 'react-icons/fi';
 import SellerSidebar from './HamburgerMenu';
-import { useAppSelector } from '@/redux/hooks';
-import ClickAwayListener from 'react-click-away-listener';
-import Link from 'next/link';
 
 interface IProps {
   setShowSearchBar: Dispatch<SetStateAction<boolean>>;
@@ -41,7 +41,7 @@ export default function NavHeader({ setShowSearchBar }: IProps) {
             >
               <h1 className="cursor-pointer font-bold text-primary min-w-[130px]">
                 <Link href="/" passHref>
-                  DeepBazar
+                  Kiwik
                 </Link>
               </h1>
             </div>

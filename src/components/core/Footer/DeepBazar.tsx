@@ -8,12 +8,12 @@ const DeepBazar = () => {
       <div className="w-full">
         <p className="cursor-pointer font-bold text-lg sm:text-2xl">
           <Link href="/" passHref>
-            DeepBazar
+            Kiwik
           </Link>
         </p>
 
         <p className="lg:mt-10 mt-4 text-sm md:text-base font-semibold">
-          Contact Us
+          Escribenos
         </p>
         <button className="mt-3 text-sm md:text-base flex items-center space-x-2">
           <FiPhoneCall className="text-white" /> <span>+880-01304802278</span>
@@ -41,9 +41,6 @@ const DeepBazar = () => {
               alt="shariar"
             />
           </div> */}
-          <p className="mt-[4px] font-bold underline text-sm md:text-base cursor-pointer">
-            Created by <a href="http://shariar.vercel.app"> Shariar </a>
-          </p>
         </div>
       </div>
     </div>

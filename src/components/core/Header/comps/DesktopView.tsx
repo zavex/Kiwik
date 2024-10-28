@@ -4,15 +4,15 @@ import { CiLocationOn } from 'react-icons/ci';
 import { FaCaravan } from 'react-icons/fa';
 import { MdLocalOffer } from 'react-icons/md';
 
+import { loginOpenModal } from '@/redux/features/loginFirstSlice';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { PATH_USER } from '@/utils/routes';
+import { useRouter } from 'next/navigation';
+import DeliveryLocation from './DeliveryLocation';
 import HamburgerMenuIcon from './Icon';
 import Logo from './Logo';
 import ProfileButtons from './ProfileButtons';
 import SearchBar from './SearchBar';
-import DeliveryLocation from './DeliveryLocation';
-import { useAppDispatch, useAppSelector } from '@/redux/hooks';
-import { loginOpenModal } from '@/redux/features/loginFirstSlice';
-import { PATH_USER } from '@/utils/routes';
-import { useRouter } from 'next/navigation';
 
 export default function DesktopView() {
   const user = useAppSelector(state => state.authSlice.user);
@@ -31,13 +31,13 @@ export default function DesktopView() {
     <div className="hidden w-full h-full lg:block">
       <div className="w-full bg-[#F5F5F5] px-4">
         <div className="h-[42px] max-w-[1201px] text-[#666666] font-light mx-auto flex items-center justify-between">
-          <h1 className="text-sm">Welcome to worldwide DeepBazar!</h1>
+          <h1 className="text-sm">Bienvenido al mejor marketplace de Mexico!</h1>
           <div className="flex space-x-4">
             <button>
-              <Link href="tel:01304802278" className="flex items-center">
+              <Link href="tel:3331784606" className="flex items-center">
                 <CiLocationOn className="text-primary" />
                 <p className="ml-[6px] text-sm">
-                  Deliver to <b>033456</b>
+                  Haz tu pedido al <b>3331784606</b>
                 </p>
               </Link>
             </button>
@@ -45,14 +45,14 @@ export default function DesktopView() {
 
             <button onClick={trackOrderHandler} className="flex items-center">
               <FaCaravan className="text-primary" />
-              <p className="ml-[6px] text-sm">Track your order</p>
+              <p className="ml-[6px] text-sm">Rastrea tu envio</p>
             </button>
             <span className="bg-[#D9D9D9] h-[18px] w-[1px]" />
 
             <Link href="/best-offers">
               <button className="flex items-center">
                 <MdLocalOffer className="text-primary" />
-                <p className="ml-[6px] text-sm">Best Offers</p>
+                <p className="ml-[6px] text-sm">Promociones</p>
               </button>
             </Link>
           </div>

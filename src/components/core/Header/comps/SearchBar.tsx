@@ -76,7 +76,7 @@ const SearchBar = () => {
             <input
               className="max-w-[90%] w-full md:flex-1 pl-2 md:pl-[36px] outline-none text-[14px] bg-transparent z-10"
               type="text"
-              placeholder="Search DeepBazar..."
+              placeholder="Buscar en Kiwik..."
               ref={searchInputRef}
               value={searchInput}
               onChange={onSearchHandler}

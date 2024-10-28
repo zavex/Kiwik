@@ -1,24 +1,24 @@
 'use client';
 
-import type { Metadata } from 'next';
+import { LoadingPage } from '@/components/common/loading';
 import ProductAdditionalInfo, {
   ComponentShowOnType,
 } from '@/components/common/ProductAdditionalInfo';
+import { useGetProductDetailsQuery } from '@/redux/services/productApi';
+import type { Metadata } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { AiFillHome } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
 import DisplayImage from './DisplayImage';
 import Info from './Info';
-import { useGetProductDetailsQuery } from '@/redux/services/productApi';
-import { LoadingPage } from '@/components/common/loading';
-import { useRouter } from 'next/navigation';
-import Head from 'next/head';
 
 //------------------------------------------------------------------
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const metadata: Metadata = {
-  title: 'Product Page - DeepBazar',
+  title: 'Productos Disponibles - Kiwik',
 };
 //------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ const Page = ({ params }: { params: { id: string } }) => {
   return (
     <main className="min-h-[60vh] max-w-[1201px] w-full m-auto px-4 pb-4">
       <Head>
-        <title>{product.title ?? 'Product'} - DeepBazar</title>
+        <title>{product.title ?? 'Product'} - Kiwik</title>
       </Head>
       <div className="flex items-center w-full h-[48px] space-x-2 text-[12px] uppercase text-primary">
         <Link href="/">

@@ -60,7 +60,7 @@ export default function HamburgerMenu({
           <ul className="mt-[10px] w-full">
             <Link href="/">
               <li className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]">
-                <AiFillHome /> <p className="ml-[8px] pt-[2px]">Home</p>
+                <AiFillHome /> <p className="ml-[8px] pt-[2px]">Inicio</p>
               </li>
             </Link>
 
@@ -69,7 +69,7 @@ export default function HamburgerMenu({
               className="cursor-pointer text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]"
             >
               <BsShop />
-              <p className="ml-[8px] pt-[2px]">Shop</p>
+              <p className="ml-[8px] pt-[2px]">Tienda</p>
             </li>
 
             <li
@@ -77,7 +77,7 @@ export default function HamburgerMenu({
               className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]"
             >
               <BiSolidOffer />
-              <p className="ml-[8px] pt-[2px]">Best Offers</p>
+              <p className="ml-[8px] pt-[2px]">Promociones</p>
             </li>
 
             <li
@@ -85,13 +85,13 @@ export default function HamburgerMenu({
               className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]"
             >
               <GiDeerTrack />
-              <p className="ml-[8px] pt-[2px]">Track Order</p>
+              <p className="ml-[8px] pt-[2px]">Rastrear Orden</p>
             </li>
 
             <Link href="/cart">
               <li className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]">
                 <FiShoppingCart />
-                <p className="ml-[8px] pt-[2px]">Cart</p>
+                <p className="ml-[8px] pt-[2px]">Carrito</p>
               </li>
             </Link>
             <Link href={PATH_USER.wishlist}>
@@ -114,7 +114,7 @@ export default function HamburgerMenu({
               >
                 <li className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]">
                   <FaSellcast />
-                  <p className="ml-[8px] pt-[2px]">Sell On DeepBazar</p>
+                  <p className="ml-[8px] pt-[2px]">Vende y gana en Kiwik!</p>
                 </li>
               </Link>
             )}
@@ -143,7 +143,7 @@ export default function HamburgerMenu({
                 <Link href="/auth">
                   <li className="text-[14px] w-full h-[36px] mb-[3px] flex items-center pl-[8px] hover:bg-[#F3F9FB]">
                     <AiFillProject />
-                    <p className="ml-[8px] pt-[2px]">Login/SignUp</p>
+                    <p className="ml-[8px] pt-[2px]">Iniciar Sesion/Registro</p>
                   </li>
                 </Link>
               )}

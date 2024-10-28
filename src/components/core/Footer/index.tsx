@@ -14,7 +14,7 @@ const Footer = () => {
         <Category />
         <Schedule />
       </div>
-      <h3 className="text-center pt-[40px] pb-[6px]">© DeepBazar 2023</h3>
+      <h3 className="text-center pt-[40px] pb-[6px]">© Kiwik 2024</h3>
     </footer>
   );
 };

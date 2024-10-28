@@ -74,7 +74,7 @@ const ProfileButtons = () => {
       <button className="flex items-center w-full max-w-[160px] min-w-[160px]">
         <MdOutlinePersonOutline size={24} className="text-primary" />
         <p className="ml-[6px] text-[16px] font-bold text-[#666666]">
-          Login/SignUp
+          Iniciar Sesion - Registro
         </p>
       </button>
     </Link>

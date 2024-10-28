@@ -64,9 +64,9 @@ export type ProductStatusType =
   (typeof ProductStatus)[keyof typeof ProductStatus];
 
 export const ProductSectionName = {
-  NewArrivals: 'New Arrivals',
-  FeaturedProducts: 'Featured Products',
-  JustForYou: 'Just For You!',
+  NewArrivals: 'Recien llegados',
+  FeaturedProducts: 'Productos especiales',
+  JustForYou: 'Solo para ti!',
 } as const;
 
 export type ProductSectionNameType =
